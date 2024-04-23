@@ -21,7 +21,7 @@ Router.post('/', async (req,res) =>{
     }
     const createnumber = await Tels.create({telefone})
 
-    res.status(200).json({msg: "Numero adicionado com sucesso!", createnumber})
+    res.status(200).json({success: "Numero adicionado com sucesso!", createnumber})
 })
 
 
