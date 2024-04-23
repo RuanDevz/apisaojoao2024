@@ -1,7 +1,10 @@
 const express = require('express')
 const app = express()
 const db = require('./models')
+const cors = require('cors')
 
+
+app.use(cors())
 const RouterTelefone = require('./routes/tels')
 app.use(express.json())
 
