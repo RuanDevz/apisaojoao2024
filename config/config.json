@@ -18,6 +18,7 @@
     "password": "fKlRyKD712t3myotDR9NTXdZkwJMeS",
     "database": "byk40ckxj1tlw1m2h9du",
     "host": "byk40ckxj1tlw1m2h9du-postgresql.services.clever-cloud.com",
+    "port": 5432,
     "dialect": "postgres"
   }
 }
