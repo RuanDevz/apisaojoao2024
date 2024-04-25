@@ -14,11 +14,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "postgres",
-    "password": "scyBXsufGkTARAfKDZiPfnQivqMUIqZu",
-    "database": "railway",
-    "host": "roundhouse.proxy.rlwy.net",
-    "port": 55035,
+    "username": "postgres.stomfwpqqpcctwijwavq",
+    "password": "Pizzariabackend",
+    "database": "postgres",
+    "host": "aws-0-sa-east-1.pooler.supabase.com",
+    "port": 5432,
     "dialect": "postgres"
   }
 }
