@@ -14,8 +14,8 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "postgres.stomfwpqqpcctwijwavq",
-    "password": "Pizzariabackend",
+    "username": "postgres.ympgtxpizjgrsrbtexry",
+    "password": "Apisaojoao1120#@",
     "database": "postgres",
     "host": "aws-0-sa-east-1.pooler.supabase.com",
     "port": 5432,
