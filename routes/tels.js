@@ -17,7 +17,7 @@ Router.post('/', async (req,res) =>{
     const existingnumber = await Tels.findOne({ where: { telefone } });
 
     if(existingnumber){
-        return res.status(201).json({msg: "Telefone já cadastrado!"})
+        return res.status(404).json({msg: "Telefone já cadastrado!"})
     }
     const createnumber = await Tels.create({telefone})
 
