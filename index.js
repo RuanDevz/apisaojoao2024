@@ -3,12 +3,20 @@ const app = express();
 const db = require('./models');
 const cors = require('cors');
 const { createClient } = require('@supabase/supabase-js');
+const { Pool } = require('pg');
+require('dotenv').config();
 
 app.use(cors());
 
+// Configuração do Supabase
 const supabaseUrl = 'https://ympgtxpizjgrsrbtexry.supabase.co';
 const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
+
+// Configuração do Pool do PostgreSQL
+const pool = new Pool({
+  connectionString: process.env.POSTGRES_URL, // Use uma variável de ambiente para a string de conexão
+});
 
 const RouterTelefone = require('./routes/tels');
 app.use(express.json());
