@@ -6,7 +6,7 @@ Router.get('/', async (req,res) =>{
     const getnumbers = req.body
     
     const number = await Tels.findAll(getnumbers)
-    
+    //
     res.json(number)
 })
 
